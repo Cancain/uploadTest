@@ -24,7 +24,7 @@ if(file_exists($targetFile)){
 
 //Check if everything is ok
 if(!$uploadOk){
-    echo 'Sorry, your file cannot be uploaded';
+    echo ' Sorry, your file cannot be uploaded';
 
 //if everything is ok, upload image
 } else {
@@ -37,3 +37,5 @@ if(!$uploadOk){
 
 
 ?>
+
+<img src="<?php echo $targetFile?>" alt="">
