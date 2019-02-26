@@ -9,7 +9,7 @@
 <body>
     <form action="upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="upload" id="upload">
-        <input type="submit" value="Upload">
+        <input type="submit" name="submit" value="Upload">
     </form>
 </body>
 </html>
