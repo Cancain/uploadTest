@@ -21,4 +21,19 @@ if(file_exists($targetFile)){
     echo 'Sorry, file already exists';
     $uploadOk = false;
 }
+
+//Check if everything is ok
+if(!$uploadOk){
+    echo 'Sorry, your file cannot be uploaded';
+
+//if everything is ok, upload image
+} else {
+    if(move_uploaded_file($_FILES['upload']['tmp_name'], $targetFile)) {
+        echo 'The file ' . basename($_FILES['upload']['name']) . ' has been uploaded';
+    } else {
+        echo 'Sorry, there was an error uploading your file';
+    }
+}
+
+
 ?>
